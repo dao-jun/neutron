@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+option java_package = "org.daojun.neutron.store.proto";
+option optimize_for = SPEED;
+
+message LedgerInfo {
+  required int64 ledgerId = 1;
+  required int64 firstEntryId = 2;
+  required int64 lastEntryId = 3;
+  required int64 size = 4;
+  required int64 ctime = 5;
+  required int64 mtime = 6;
+}
